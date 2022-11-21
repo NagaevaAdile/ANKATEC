@@ -1,0 +1,101 @@
+body {
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.media {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 14%;
+    margin: 4% auto;
+}
+
+.myVideo {
+    background: rgba(185, 185, 185, 0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -550;
+}
+
+.logo {
+    margin-top: 8%;
+}
+
+.logo img {
+    width: 38%;
+}
+
+.title {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 4.5em;
+}
+
+.title span {
+    color: #87ba4c;
+}
+
+.text {
+    color: white;
+    width: 50%;
+    margin: -2em auto;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.media img {
+    width: 24px;
+    height: 24px;
+}
+
+.media img:hover {
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+
+@media (max-width:989px) {
+    body {
+        overflow: hidden;
+    }
+
+    .video-box iframe {
+        left: -38% !important;
+        width: 170vw;
+        transform: scale(2.5);
+    }
+
+    .main {
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 2.5em;
+        margin-top: 30%;
+    }
+
+    .text {
+        display: none;
+    }
+
+    .media {
+        display: none;
+    }
+}

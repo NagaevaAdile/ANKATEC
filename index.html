@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANKATEC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="content/css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/css/jquery.mb.YTPlayer.min.css">
+</head>
+
+<body>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/jquery.mb.YTPlayer.min.js"></script>
+
+    <div id="myPlayer" class="myVideo">
+        <div class="player"
+            data-property="{videoURL:'https://www.youtube.com/embed/gHYF14SNzY4',containment:'#myPlayer', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, addRaster:true, quality:'default', optimizeDisplay: true, realfullscreen: true }">
+        </div>
+    </div>
+
+
+    <section class="main">
+        <div class="logo">
+            <img src="content/img/anka-logo.png" alt="">
+        </div>
+        <h1 class="title"><span>web sitemiz</span> güncelleni̇yor</h1>
+        <h3 class="text">Our website is under construction, We are working very hard to give you the best experience
+            with this one.<br> You will love Selene as much as we do. It will morph perfectiy on your needs!</h3>
+        <ul class="media">
+            <li><a href="#"><img src="content/img/tw.png" alt=""></a></li>
+            <li><a href="#"><img src="content/img/fb.png" alt=""></a></li>
+            <li><a href="#"><img src="content/img/pint.png" alt=""></a></li>
+            <li><a href="#"><img src="content/img/inst.png" alt=""></a></li>
+            <li><a href="#"><img src="content/img/vm.png" alt=""></a></li>
+        </ul>
+    </section>
+
+
+    <script>
+        var myPlayer;
+        jQuery(function () {
+
+            var options = {
+                mobileFallbackImage: "http://www.hdwallpapers.in/walls/pink_cosmos_flowers-wide.jpg",
+                playOnlyIfVisible: true
+            };
+
+            myPlayer = jQuery(".player").YTPlayer(options);
+        });
+    </script>
+
+</body>
+
+</html>
